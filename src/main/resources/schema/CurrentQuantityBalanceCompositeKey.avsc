@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "CurrentQuantityBalanceCompositeKey",
+  "namespace": "com.cdr",
+  "fields": [
+    {"name": "MSISDN", "type":"string"},
+    {"name": "quantityTypeID", "type":"int"}
+  ]
+}

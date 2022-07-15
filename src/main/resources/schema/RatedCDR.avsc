@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "name": "RatedCDR",
+  "namespace": "com.cdr",
+  "fields": [
+    {"name": "cdrID", "type":"int"},
+    {"name": "MSISDN_A", "type":"string"},
+    {"name": "MSISDN_B", "type":"string"},
+    {"name": "callTime", "type": "long"},
+    {"name": "durationInSeconds", "type": "int"},
+    {"name": "serviceName", "type":"string", "default": "sameOperatorCall"},
+    {"name": "rate", "type" : {"type":"bytes",
+      "scale":3,"precision":10, "logicalType":"decimal"}},
+    {"name": "quantityTypeID", "type": "int"},
+    {"name": "isBilled" , "type": "int"}
+  ]
+}

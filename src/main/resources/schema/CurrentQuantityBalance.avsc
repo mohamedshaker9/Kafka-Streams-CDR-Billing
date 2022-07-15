@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "name": "CurrentQuantityBalance",
+  "namespace": "com.cdr",
+  "fields": [
+    {"name": "MSISDN", "type":"string"},
+    {"name": "quantityTypeID", "type":"int"},
+    {"name": "currentBalance", "type": "string"},
+    {"name": "expirationDate", "type": "string"},
+    {"name": "lastUpdate",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}
